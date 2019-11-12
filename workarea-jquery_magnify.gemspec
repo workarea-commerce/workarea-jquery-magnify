@@ -12,8 +12,9 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/workarea-commerce/workarea-jquery-magnify"
   s.summary     = "Add image zoom capabilities on mouseover"
   s.description = "Let your user enlarge images on mouseover, it's a great candidate for non touch enabled devices"
-  
+
   s.files = `git ls-files`.split("\n")
-  
+
   s.add_dependency 'workarea', '~> 3.x'
+  s.license = 'Business Software License'
 end
