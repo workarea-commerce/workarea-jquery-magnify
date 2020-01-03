@@ -89,7 +89,7 @@ $(cat CHANGELOG.md)" > CHANGELOG.md'
   system 'git add CHANGELOG.md && git commit -m "Update changelog" && git push origin HEAD'
 
   system "git tag -a v#{Workarea::JqueryMagnify::VERSION} -m 'Tagging #{Workarea::JqueryMagnify::VERSION}'"
-  system 'git push --tags'
+  system 'git push origin HEAD --follow-tags'
 
   system "gem build workarea-jquery_magnify.gemspec"
   system "gem push workarea-jquery_magnify-#{Workarea::JqueryMagnify::VERSION}.gem --host #{host}"
